@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url('img/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:bold;
+    color:white;
+}
+
+.hero p{
+    color:white;
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.hero .btn{
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:8px;
+}
+
+/* Navbar */
+.navbar{
+    background:#0B3D91 !important;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.navbar .btn{
+    margin-left:5px;
+}
+
+/* Header Dashboard */
+h2{
+    color:#0B3D91;
+    font-weight:bold;
+}
+
+p{
+    color:#555;
+}
+
+/* Card Statistik */
+.card{
+    border:none;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-body h3,
+.card-body h1{
+    font-weight:bold;
+}
+
+.text-primary{
+    color:#0B3D91 !important;
+}
+
+/* Total Umat */
+.card-statistik{
+    background:white;
+    border-left:5px solid #D4AF37;
+}
+
+/* Tombol */
+.btn-primary{
+    background:#0B3D91;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#072b68;
+}
+
+.btn-warning{
+    background:#D4AF37;
+    border:none;
+    color:black;
+}
+
+.btn-warning:hover{
+    background:#b8942f;
+}
+
+.btn-success{
+    border:none;
+}
+
+.btn-info{
+    color:white;
+}
+
+.btn-secondary{
+    border:none;
+}
+
+/* Dashboard Card */
+.dashboard-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Statistik Angka */
+.dashboard-card h3{
+    color:#0B3D91;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    background:#0B3D91;
+    color:#ffffff;
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:1px;
+    box-shadow:0 -2px 10px rgba(0,0,0,0.2);
+}
+
+footer p{
+    color:#ffffff !important;
+    margin:0;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
