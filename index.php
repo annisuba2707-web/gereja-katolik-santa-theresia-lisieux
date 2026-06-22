@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "koneksi.php";
 
 $pastor = mysqli_query($conn,"SELECT * FROM pastor");
@@ -65,16 +66,34 @@ $galeri = mysqli_query($conn,"SELECT * FROM galeri");
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="#pastor">
+                          Pastor
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#galeri">
                         Galeri
                     </a>
                 </li>
+
+                <?php if(isset($_SESSION['login'])){ ?>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.php">
+                         Dashboard
+                    </a>
+                </li>
+
+                <?php }else{ ?>
 
                 <li class="nav-item">
                     <a class="nav-link" href="login.php">
                         Login Admin
                     </a>
                 </li>
+
+                <?php } ?>
 
             </ul>
 
